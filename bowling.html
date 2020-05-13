@@ -29,7 +29,86 @@
     </header>
          <div class="work-zone">
             
-        <div class="box-image"><img src="images/bowling%202.png" alt="images" width="640" height="756,25">
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.23.57.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.24.12.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="images/bowling%202.png" style="width:100%">
+  <div class="text"></div>
+</div>
+            <div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.24.29.png">
+  <div class="text">Caption four</div>
+</div>
+
+            <div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.24.40.png">
+  <div class="text"></div>
+</div>
+            <div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.24.49.png">
+  <div class="text"></div>
+</div>
+            <div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="images/Captura%20de%20ecr%C3%A3%202020-05-13,%20%C3%A0s%2012.24.57.png">
+  <div class="text"></div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
         </div>
         <div class="box-work">
            <div class="box-title">  <div class="astr-title"><p>BOWLING</p> </div>
